@@ -43,3 +43,30 @@ venv\Scripts\activate
 source venv/bin/activate
 
 pip install python-dotenv
+```
+---
+## Configuration
+
+Update the following values inside `send_emails.py`:
+
+```python
+CSV_FILE = "responses.csv"
+
+EMAIL_COLUMN = "EMAIL"
+
+NAME_COLUMN = "NAME"
+
+STATUS_COLUMN = "Status"
+```
+
+Configure your sender credentials inside `.env`:
+
+```env
+GMAIL_USER=your_email@gmail.com
+
+GMAIL_APP_PASSWORD=abcdefghijklmnop
+```
+
+Set the email subject and body inside `message.txt`
+
+---
